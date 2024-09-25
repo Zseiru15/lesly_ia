@@ -117,11 +117,11 @@ const comandos = {
         voz('señor, son las ' + strTime)
     },
 
-    "creador": () => {
-        voz("Mi creador es el ingeniero Westmont");
+    "¿quién te creo?": () => {
+        voz("Mis creadores son mateo, camilo y dario");
     },
 
-    "que eres": () => {
+    "¿qué eres?": () => {
         voz("soy un asistente virtual, y en un futuro, la maquina mas inteligente de todos los tiempos");
     },
 
@@ -129,7 +129,7 @@ const comandos = {
         voz("mi nombre es Leslie");
     },
     
-    "me conoces": () => {
+    "que sabes de mí": () => {
         voz("jummm, dejame pensar, que aun vives con tus padres y te mantienen, tu novia te puso los cachos con tu mejor amigo, te bañas cada 5 días y lo peor de todo es que te quiero.");
     },
 
@@ -177,25 +177,15 @@ const comandos = {
         voz("ok, buscando " + busqueda +" para ti");
         window.open("https://www.google.com/search?q=" + busqueda)
     },
+
+    "quiero ver *busqueda": busqueda => {
+        voz("ok, buscando " + busqueda + "para ti");
+        window.open("https://www.youtube.com/results?search_query=" + busqueda)
+    },
     
     "quiero escuchar *busqueda": busqueda => {
         voz("ok, buscando " + busqueda + "para ti");
         window.open("https://www.youtube.com/results?search_query=" + busqueda)
-    },
-
-    "cálculo": busqueda => {
-        voz("ok, buscando " + busqueda + "para ti");
-        window.open("https://www.youtube.com/watch?v=Ec-cGjh0Fr0" + busqueda)
-    },
-
-    "quiero escuchar pop": busqueda => {
-        voz("ok, buscando " + busqueda + "para ti");
-        window.open("https://www.youtube.com/watch?v=bmzDsBzaiiY" + busqueda)
-    },
-
-    "Lesli musica": busqueda => {
-        voz("ok, buscando para ti");
-        window.open ("https://www.youtube.com/watch?v=bmzDsBzaiiY" + busqueda)
     },
 
     "Lesly preséntate": busqueda => {
